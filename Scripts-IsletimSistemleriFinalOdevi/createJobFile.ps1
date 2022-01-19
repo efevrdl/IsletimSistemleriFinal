@@ -13,7 +13,7 @@
 
 <# Her gün saat sabah 10:00'da yolunu belirttiğimiz powershell script'ini çalıştıran "algoritmaTask1 adında bir schedule job oluşturuyoruz. #>
 
-$action = New-ScheduledTaskAction -Execute 'Powershell.exe'  -Argument 'C:\Users\Umut\Desktop\Scripts-IsletimSistemleriFinalOdevi\algoritma1.ps1'
+$action = New-ScheduledTaskAction -Execute 'Powershell.exe'  -Argument 'C:\Users\yusuf\Desktop\Scripts-IsletimSistemleriFinalOdevi\algoritma1.ps1'
 
 $trigger =  New-ScheduledTaskTrigger -Daily -At 10am
 
@@ -28,7 +28,7 @@ Register-ScheduledTask -Action $action  -Trigger $trigger -TaskName "algoritmaTa
 
 <# Her gün saat sabah 10:00'da yolunu belirttiğimiz powershell script'ini çalıştıran "algoritmaTask2 adında bir schedule job oluşturuyoruz. #>
 
-$action = New-ScheduledTaskAction -Execute 'Powershell.exe'  -Argument 'C:\Users\Umut\Desktop\Scripts-IsletimSistemleriFinalOdevi\algoritma2.ps1'
+$action = New-ScheduledTaskAction -Execute 'Powershell.exe'  -Argument 'C:\Users\yusuf\Desktop\Scripts-IsletimSistemleriFinalOdevi\algoritma2.ps1'
 
 $trigger =  New-ScheduledTaskTrigger -Daily -At 10am
 
